@@ -1,6 +1,6 @@
 {
   "name": "newman-reporter-newpost",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "This package makes junit reporter richer such that protractor can consume the xml to give a richer html report.",
   "main": "lib/index.js",
   "scripts": {
