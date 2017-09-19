@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/pgengel/NodeJs-NewPostReporter/issues"
   },
-  "homepage": "https://github.com/pgengel/NodeJs-NewPostReporter#readme"
+  "homepage": "https://github.com/pgengel/NodeJs-NewPostReporter#readme",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "lodash": "^4.17.4",
+    "newman": "^3.8.2",
+    "xmlbuilder": "^9.0.4"
+  }
 }

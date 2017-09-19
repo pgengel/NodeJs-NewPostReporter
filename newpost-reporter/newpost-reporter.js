@@ -2,7 +2,7 @@ var _ = require('lodash'),
 xml = require('xmlbuilder'),
 
 util = require('../util'),
-JunitReporter;
+NewPostReporter;
 
 /**
 * A function that creates raw XML to be written to Newman JUnit reports.
@@ -12,7 +12,7 @@ JunitReporter;
 * @param {String=} reporterOptions.export - Optional custom path to create the XML report at.
 * @returns {*}
 */
-JunitReporter = function (newman, reporterOptions) {
+NewPostReporter = function (newman, reporterOptions) {
 newman.on('beforeDone', function () {
     var report = _.get(newman, 'summary.run.executions'),
         collection = _.get(newman, 'summary.collection'),
@@ -123,8 +123,8 @@ newman.on('beforeDone', function () {
 
     root.att('time', testSuitesExecutionTime);
     newman.exports.push({
-        name: 'junit-reporter',
-        default: 'newman-run-report.xml',
+        name: 'newpost-reporter',
+        default: 'newpost-run-report.xml',
         path: reporterOptions.export,
         content: root.end({
             pretty: true,
@@ -136,4 +136,4 @@ newman.on('beforeDone', function () {
 });
 };
 
-module.exports = JunitReporter;
+module.exports = NewPostReporter;

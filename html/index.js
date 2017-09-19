@@ -4,7 +4,7 @@ var fs = require('fs'),
     _ = require('lodash'),
     handlebars = require('handlebars'),
 
-    util = require('../../util'),
+    util = require('../util'),
 
     /**
      * An object of the default file read preferences.
