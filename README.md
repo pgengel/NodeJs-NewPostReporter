@@ -1,1 +1,1 @@
-NodeJs-NewPostReporter
+newman-reporter-newpost
