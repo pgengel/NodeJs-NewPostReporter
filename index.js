@@ -1,7 +1,7 @@
 var _ = require('lodash'),
 xml = require('xmlbuilder'),
 
-util = require('../util'),
+util = require('util'),
 NewPostReporter;
 
 /**
@@ -13,17 +13,17 @@ NewPostReporter;
 * @returns {*}
 */
 NewPostReporter = function (newman, reporterOptions) {
-newman.on('beforeDone', function () {
-    var report = _.get(newman, 'summary.run.executions'),
-        collection = _.get(newman, 'summary.collection'),
-        stats = _.get(newman, 'summary.run.stats'),
-        cache,
-        root,
-        testSuitesExecutionTime = 0,
-        executionTime = 0;
+    newman.on('beforeDone', function () {
+        var report = _.get(newman, 'summary.run.executions'),
+            collection = _.get(newman, 'summary.collection'),
+            stats = _.get(newman, 'summary.run.stats'),
+            cache,
+            root,
+            testSuitesExecutionTime = 0,
+            executionTime = 0;
 
-    if (!report) {
-        return;
+        if (!report) {
+            return;
     }
 
     root = xml.create('testsuites', { version: '1.0', encoding: 'UTF-8' });
@@ -131,9 +131,9 @@ newman.on('beforeDone', function () {
             indent: '  ',
             newline: '\n',
             allowEmpty: false
-        })
+            })
+        });
     });
-});
 };
 
 module.exports = NewPostReporter;
