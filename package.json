@@ -1,0 +1,22 @@
+{
+  "name": "newman-reporter-newpost",
+  "version": "0.0.1",
+  "description": "This package makes junit reporter richer such that protractor can consume the xml to give a richer html report.",
+  "main": "newpost-reporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgengel/NodeJs-NewPostReporter.git"
+  },
+  "keywords": [
+    "newpost"
+  ],
+  "author": "Pieter Engelbrecht <pieter.engelbrecht@derivco.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgengel/NodeJs-NewPostReporter/issues"
+  },
+  "homepage": "https://github.com/pgengel/NodeJs-NewPostReporter#readme"
+}
