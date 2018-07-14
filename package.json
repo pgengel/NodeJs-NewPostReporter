@@ -23,7 +23,7 @@
     "argparse": "1.0.9",
     "async": "2.5.0",
     "cli-progress": "1.5.1",
-    "cli-table2": "0.2.0",
+    "cli-table3": "0.5.0",
     "colors": "1.1.2",
     "csv-parse": "1.2.2",
     "eventemitter3": "2.0.3",
