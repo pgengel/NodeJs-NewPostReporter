@@ -25,7 +25,7 @@
     "cli-progress": "1.5.1",
     "cli-table3": "0.5.0",
     "colors": "1.1.2",
-    "csv-parse": "1.2.2",
+    "csv-parse": "4.4.6",
     "eventemitter3": "2.0.3",
     "filesize": "3.5.10",
     "handlebars": "^4.0.10",
